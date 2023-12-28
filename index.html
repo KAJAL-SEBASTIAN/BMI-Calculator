@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator - Body Mass Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style.css">
+<script src="./script.js"></script>
+<link rel="icon" type="image/png" href="https://i.pinimg.com/474x/f1/4f/c9/f14fc97a68a5483cd00f8dc4b28422cc.jpg">
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+         <img src="https://www.iciciprulife.com/content/icici-prudential-life-insurance/_jcr_content/headerpar/header_sightly/navHeader.img.png/1686333582909.png" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent aria-expanded= "false"  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+       
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <form class="d-flex" role="search">
+                    <input style="margin-left: 10px;"  class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="34" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                  </form>
+              <li class="nav-item">
+                <a style="margin-left: 10px;" class="nav-link active" aria-current="page" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a style="margin-left: 10px;" class="nav-link active" href="#">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a style="margin-left: 10px;" class="nav-link active" href="#">Contact Us</a>
+              </li>
+             
+              <button  style="margin-left: 10px;" class="btn btn-secondary" type="submit">Track Application</button>
+              <button  style="background-color: rgb(218, 218, 218);margin-left: 200px;" class="btn"  type="submit">LOGIN</button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav  class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid" style="background-color: rgb(179, 41, 41);">
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" style="margin-left: 130px;color: white;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Plans
+                    </a>
+                  </li>
+
+
+                <a style="margin-left: 40px; color: white;" class="nav-link active" aria-current="page" href="#">Term Insurance</a>
+              </li>
+              <li class="nav-item">
+                <a style="margin-left: 40px; color: white;" class="nav-link active" aria-current="page" href="#">Claims</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" style="margin-left: 40px;color: white;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Library
+                </a>
+              </li>
+              <li class="nav-item">
+                <a style="margin-left: 40px; color: white;" class="nav-link active" aria-current="page" href="#">Customer Services</a>
+              </li>
+              <li class="nav-item">
+                <a style="margin-left: 40px; color: white;" class="nav-link active" aria-current="page" href="#">Public Disclosure</a>
+              </li>
+              <li class="nav-item">
+                <a style="margin-left: 50px; color: white;" class="nav-link active" aria-current="page" href="#">Tax Center</a>
+              </li>
+             
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+<div class="row" style="background-color: rgb(236, 233, 233);">
+<div class="col-7 ">
+  <img src="https://www.iciciprulife.com/content/icici-prudential-life-insurance/tools-and-calculators/bmi_assets/images/Component21.svg"  alt=""  >
+  <h1 style="color: rgb(179, 41, 41) ;">BMI Calculator</h1>
+  <br>
+  <h3 style="margin-left: 12px;  color:  rgb(179, 41, 41);">(Body Mass Index)</h3>
+</div>
+</div>
+<div class="row" style="background-color: rgb(236, 233, 233);">
+<div class="col-6">
+<div class="class1">
+ <div id="radio" style="margin-left: 15px;">
+    <label> <b> Gender: </b></label>
+    <br>
+    <input  name="gender" id="male"  type="radio">
+    <label  for=male> Male</label><br>
+    <input name="gender" id="female" type="radio">
+    <label  for=female>Female</label><br>
+    <input  name="gender" id="other" type="radio">
+    <label  for=other>Other</label>
+ </div>
+
+<div id="age" style="margin: 20px;">
+    <label for="ag"><b> Age </b></label>
+    <input id="result" class="form-control" style="width: 200px;" id="ag"  type="text">
+    
+</div>
+<div  style="margin: 20px;">
+  <label for="ag"><b> Height(in cm)</b> </label>
+  <input id="hei" class="form-control" style="width: 200px;" type="text">
+</div>
+<div  style="margin: 20px;">
+  <label for="ag"><b>Weigth(in cm)</b> </label>
+  <input id="wei" class="form-control" style="width: 200px;" type="text">
+</div class="btn">
+<button onclick="Calculate()"   class="btn btn-secondary" type="submit">CALCULATE</button>
+</div>
+<div class="class3">
+  <img src="https://westmedical.com/wp-content/uploads/2022/12/3932e867ae54709fb3d2b4f4ebebca7e6f8f6ff4-1993x1199-1.jpg" width="200px" height="200px" alt="">
+
+
+
+</div> 
+<div class="class2">
+<div style="margin-left: 200px; margin-top: 20px;" class="bmi-value">
+  <h4>BMI Value: </h4>
+  <div id="bmi-output"></div>
+</div>
+<div style="margin-left: 200px;margin-top: 20px;" class="status">
+  <h4>Status: </h4>
+  <div id="bmi-status"></div>
+</div>   
+</div>
+</div>
+  
+
+</div>
+
+</body>
+</html>
